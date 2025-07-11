@@ -1,12 +1,13 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-export default function ContactPage(){
+export default function ProjectPage(){
     return(
         <>
             <Header />
-            <Footer />
 
+            <Footer />
         </>
+
     )
 }

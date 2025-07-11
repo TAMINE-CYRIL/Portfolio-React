@@ -1,8 +1,8 @@
-import './App.css'
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage'
 import {Routes, Route} from 'react-router-dom';
+import ProjectPage from './pages/ProjectPage';
 
 function App() {
 
@@ -10,10 +10,9 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path='/contact' element={<ContactPage />} />
         <Route path='/about' element={<AboutPage />} />
-
-
+        <Route path='/project' element={<ProjectPage />} />
+        <Route path='/contact' element={<ContactPage />} />
 
       </Routes>
       
