@@ -6,7 +6,7 @@ export default function AboutPage(){
     return(
         <>
             <Header />
-            <h1>To know more about me :</h1>
+            <h1 className="text-xl font-semibold text-center">To know more about me :</h1>
             <p>I'm a computer science student currently studying at IUT Aix-Marseille, in Aix-en-Provence, 
                 with a strong interest in software development, web technologies. 
                 I enjoy turning ideas into practical applications and constantly seek opportunities to learn and grow through hands-on experience.
