@@ -1,29 +1,44 @@
-import Technologies from "../components/About/Technologies";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import icon from "../assets/iconAbout.png";
+import SkillsSection from "../components/About/SkillsSection";
 
 export default function AboutPage(){
     return(
         <>
             <Header />
-            <h1 className="text-xl font-semibold text-center">To know more about me :</h1>
-            <p>I'm a computer science student currently studying at IUT Aix-Marseille, in Aix-en-Provence, 
-                with a strong interest in software development, web technologies. 
-                I enjoy turning ideas into practical applications and constantly seek opportunities to learn and grow through hands-on experience.
-            </p>
-            <p>
-                I'm currently looking for opportunities in work-study where I can apply my skills,
-                 contribute to meaningful projects, and continue learning from experienced professionals, while pursuing my education.
+            <section className="flex flex-col md:flex-row items-center gap-8 p-14 justify-center">
+                <img className="w-48 h-auto md:w-64" src={icon} alt="Personal Icon" />
 
-            </p>
+                <div className="flex flex-col gap-4 max-w-2xl">
+                    <h1 className="text-2xl font-bold text-center">
+                    Get to Know Me
+                    </h1>
 
-            <p>Apart from coding, I also love </p>
-            <ul>
-                <li>Playing Games</li>
-                <li>Reading</li>
-                <li>Drawing</li>
-            </ul>         
-            <Technologies />   
+                    <p>
+                    I'm a passionate Computer Science student currently enrolled at IUT Aix-Marseille in Aix-en-Provence.
+                    I have a strong interest in software development and web technologies. I love transforming ideas into
+                    functional applications and am always looking for new ways to learn and grow through hands-on experience.
+                    </p>
+
+                    <p>
+                    I'm actively seeking a work-study opportunity where I can contribute to impactful projects,
+                    apply my technical skills, and learn from experienced professionals while continuing my academic journey.
+                    </p>
+
+                    <div>
+                    <p>Beyond coding, I also enjoy:</p>
+                    <ul className="list-disc list-inside">
+                        <li>Playing video games</li>
+                        <li>Reading</li>
+                        <li>Drawing</li>
+                    </ul>
+                    </div>
+                </div>
+            </section>
+
+ 
+            <SkillsSection />   
 
 
             <Footer />
