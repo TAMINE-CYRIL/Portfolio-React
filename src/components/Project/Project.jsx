@@ -2,7 +2,7 @@ import Languages from './Languages';
 
 export default function Project({ title, desc, github, languages = [] }) {
   return (
-    <div className="bg-slate-400 dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 max-w-xl mx-auto mt-10 flex flex-col">
+    <div className="dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-1 max-w-xl mx-auto mt-10 flex flex-col">
       <div className="p-6 space-y-4"> 
         <h2 className="text-2xl font-bold text-gray-800 dark:text-white">{title}</h2>
         <p className="text-gray-600 dark:text-gray-300">{desc}</p>
