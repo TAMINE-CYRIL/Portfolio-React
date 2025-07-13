@@ -9,23 +9,39 @@ export default function ContactPage() {
             <section className="max-w-2xl mx-auto my-16 px-4 sm:px-6 lg:px-8">
                 <div className="bg-slate-200 dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden">
                     <div className="p-8">
-                        <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-2">Contactez-moi</h1>
+                        <h1 className="text-3xl font-bold text-gray-800 dark:text-white mb-2">To contact me</h1>
                         <p className="text-gray-600 dark:text-gray-300 mb-6">
-                            Remplissez le formulaire ci-dessous et je vous répondrai dès que possible.
+                            Let's get in touch !
                         </p>
                         
                         <form className="space-y-6">
                             <div>
                                 <label 
+                                    htmlFor="name" 
+                                    className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
+                                >
+                                    Your name
+                                </label>
+                                <input
+                                    id="name"
+                                    type="email"
+                                    placeholder="Your name..."
+                                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition duration-200"
+                                    required
+                                />
+
+                            
+
+                                <label 
                                     htmlFor="email" 
                                     className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
                                 >
-                                    Email
+                                    Your email
                                 </label>
                                 <input
                                     id="email"
                                     type="email"
-                                    placeholder="votre@email.com"
+                                    placeholder="your@email.com"
                                     className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition duration-200"
                                     required
                                 />
@@ -36,12 +52,12 @@ export default function ContactPage() {
                                     htmlFor="message" 
                                     className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1"
                                 >
-                                    Message
+                                    Your message
                                 </label>
                                 <textarea
                                     id="message"
                                     rows={5}
-                                    placeholder="Votre message..."
+                                    placeholder="Your message..."
                                     className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition duration-200"
                                     required
                                 />

@@ -13,7 +13,8 @@ export default function ProjectPage(){
                         key={proj.id}
                         title={proj.title}
                         desc={proj.desc}
-                        github={proj.github} />
+                        github={proj.github}
+                        languages={proj.languages} />
 
                     ))}
                 </div>

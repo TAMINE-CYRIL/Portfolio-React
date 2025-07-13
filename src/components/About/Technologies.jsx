@@ -29,6 +29,11 @@ export default function Technologies() {
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             <TechnologiesBlock title="React" />
             <TechnologiesBlock title="Pandas" />
+            <TechnologiesBlock title="TailwindCSS" />
+            <TechnologiesBlock title="Matplotlib" />
+            <TechnologiesBlock title="Swiper JS" />
+
+
           </div>
         </div>
 
@@ -43,6 +48,8 @@ export default function Technologies() {
             <TechnologiesBlock title="PyCharm" />
             <TechnologiesBlock title="Docker" />
             <TechnologiesBlock title="Figma" />
+            <TechnologiesBlock title="WordPress" />
+
           </div>
         </div>
       </div>
