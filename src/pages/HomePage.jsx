@@ -2,6 +2,7 @@ import Footer from "../components/Footer"
 import Header from "../components/Header"
 import illustration from "../assets/illustration.jpg"
 import { FaEnvelope, FaDownload } from "react-icons/fa"
+import Education from "../components/Home/Education"
 
 export default function HomePage() {
     return (
@@ -11,7 +12,7 @@ export default function HomePage() {
                 <section className="flex flex-col max-w-xl">
                     <p className="text-gray-500 text-xl mb-2">Web Developer</p>
                     <h1 className="text-3xl md:text-4xl font-semibold mb-4">
-                        Hi, I am <span className="text-amber-500 font-bold">CYRIL</span>
+                        Hi, I am <span className="text-amber-500 font-bold">CYRIL TAMINE</span>
                     </h1>
                     <p className="text-gray-700 leading-relaxed text-md md:text-lg mb-6">
                         “Front-end development is the art of bringing logic to life. <br />
@@ -35,6 +36,10 @@ export default function HomePage() {
                     src={illustration}
                     alt="Homepage Illustration"
                 />
+            </section>
+            <section className="flex flex-col justify-center items-center">
+                <h1>Education </h1>
+                <Education />
             </section>
             <Footer />
         </>

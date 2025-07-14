@@ -4,14 +4,6 @@ export default function Header() {
   return (
     <header>
       <nav className="flex items-center justify-between shadow-md bg-white dark:bg-gray-900 px-8 py-4">
-        <div>
-          <Link to="/">
-            <span className="text-xl font-bold text-gray-800 dark:text-white hover:text-amber-500 transition-colors duration-300">
-              CT    
-            </span>
-          </Link>
-        </div>
-
         <ul className="flex items-center space-x-8">
           <li>
             <Link

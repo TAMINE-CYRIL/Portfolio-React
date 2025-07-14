@@ -1,5 +1,5 @@
-import github from "../assets/github.png";
-import linkedin from "../assets/linkedin.png";
+import { AiFillGithub } from "react-icons/ai";
+import { AiFillLinkedin } from "react-icons/ai";
 
 export default function Footer() {
   return (
@@ -9,23 +9,15 @@ export default function Footer() {
           Developed and designed by <span className="font-semibold">Cyril Tamine</span>
         </p>
         <p className="text-sm">© 2025 - Tous droits réservés</p>
-
         <div className="flex justify-center space-x-6 pt-2">
           <a href="https://github.com/TAMINE-CYRIL" target="_blank">
-            <img
-              src={github}
-              alt="GitHub logo"
-              className="w-8 transition-all duration-300 hover:w-[35px]"
-            />
+            <AiFillGithub className="text-3xl transition-transform duration-300 hover:scale-125" />
           </a>
           <a href="https://www.linkedin.com/in/cyril-tamine-9068642b4/" target="_blank">
-            <img
-              src={linkedin}
-              alt="LinkedIn logo"
-              className="w-8 transition-all duration-300 hover:w-[35px]"
-            />
+            <AiFillLinkedin className="text-3xl transition-transform duration-300 hover:scale-125" />
           </a>
         </div>
+
       </div>
     </footer>
   );
