@@ -40,7 +40,7 @@ const projet =[
     title:"ETU Website",
     desc: "Website built for students in the BUT Informatique program at IUT Aix-Marseille. It centralizes course links, useful tools, recommended software, and campus information, with a clean layout and optional dark mode for better usability.",
     github:"https://github.com/TORCHIN-Maxence-24020376/Site-ETU",
-    languages: ["HTML, CSS, JavaScript"]
+    languages: ["HTML", "CSS", "JavaScript"]
 },
 {
     id:6,

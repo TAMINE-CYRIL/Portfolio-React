@@ -1,40 +1,40 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import illustration from "../assets/contact.avif";
 
 export default function ContactPage() {
     return (
         <>
             <Header />
-            
-            <section className="max-w-2xl mx-auto my-16 px-4 sm:px-6 lg:px-8">
-                <div className="dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden">
+
+            <section className="max-w-6xl mx-auto my-16 px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-8">
+                
+                <div className="flex-1 dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden w-full">
                     <div className="p-8">
                         <h1 className="text-3xl font-bold dark:text-white mb-2">To contact me</h1>
                         <p className="dark:text-gray-300 mb-6">
                             Let's get in touch !
                         </p>
-                        
+
                         <form className="space-y-6">
                             <div>
-                                <label 
-                                    htmlFor="name" 
+                                <label
+                                    htmlFor="name"
                                     className="block text-sm font-medium dark:text-gray-300 mb-1"
                                 >
                                     Your name
                                 </label>
                                 <input
                                     id="name"
-                                    type="email"
+                                    type="text"
                                     placeholder="Your name..."
                                     className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white transition duration-200"
                                     required
                                 />
 
-                            
-
-                                <label 
-                                    htmlFor="email" 
-                                    className="block text-sm font-medium dark:text-gray-300 mb-1"
+                                <label
+                                    htmlFor="email"
+                                    className="block text-sm font-medium dark:text-gray-300 mt-4 mb-1"
                                 >
                                     Your email
                                 </label>
@@ -46,10 +46,10 @@ export default function ContactPage() {
                                     required
                                 />
                             </div>
-                            
+
                             <div>
-                                <label 
-                                    htmlFor="message" 
+                                <label
+                                    htmlFor="message"
                                     className="block text-sm font-medium dark:text-gray-300 mb-1"
                                 >
                                     Your message
@@ -62,11 +62,11 @@ export default function ContactPage() {
                                     required
                                 />
                             </div>
-                            
+
                             <div>
                                 <button
                                     type="submit"
-                                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-4 rounded-lg transition duration-200 transform hover:scale-105"
+                                    className="w-full bg-amber-500 hover:bg-amber-600 text-white font-medium py-3 px-4 rounded-lg transition duration-200 transform hover:scale-105"
                                 >
                                     Send
                                 </button>
@@ -74,8 +74,16 @@ export default function ContactPage() {
                         </form>
                     </div>
                 </div>
+
+                <div className="flex-1 w-full">
+                    <img
+                        src={illustration}
+                        alt="Contact illustration"
+                        className="w-full h-auto object-cover"
+                    />
+                </div>
             </section>
-            
+
             <Footer />
         </>
     );

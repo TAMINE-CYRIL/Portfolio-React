@@ -12,7 +12,7 @@ export default function AboutPage(){
 
                 <div className="flex flex-col gap-4 max-w-2xl">
                     <h1 className="text-2xl font-bold text-center">
-                    Get to Know Me
+                    Get to Know <span className="text-amber-500">Me</span>
                     </h1>
 
                     <p>

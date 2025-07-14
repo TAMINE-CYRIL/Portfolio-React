@@ -4,21 +4,26 @@ export default function SkillsSection() {
   return (
     <section className="max-w-6xl mx-auto px-4 py-8">
       <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-8 text-center">
-          My Technical Skills
+        My Technical{" "}
+        <span className="text-amber-500 bg-clip-text text-shadow-sm">
+          Skills
+        </span>
       </h2>
-      
+
       <div className="space-y-10">
         <div>
           <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-300 mb-4">
             Programming Languages
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            <SkillCard title="Java" />
-            <SkillCard title="C++" />
-            <SkillCard title="Python" />
-            <SkillCard title="JavaScript" />
-            <SkillCard title="HTML/CSS" />
-            <SkillCard title="PHP" />
+            {["Java", "C++", "Python", "JavaScript", "HTML/CSS", "PHP"].map((title) => (
+              <div
+                key={title}
+                className="hover:scale-105 transition-transform duration-300 hover:shadow-lg"
+              >
+                <SkillCard title={title} />
+              </div>
+            ))}
           </div>
         </div>
 
@@ -27,13 +32,14 @@ export default function SkillsSection() {
             Frameworks & Libraries
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            <SkillCard title="React" />
-            <SkillCard title="Pandas" />
-            <SkillCard title="TailwindCSS" />
-            <SkillCard title="Matplotlib" />
-            <SkillCard title="Swiper JS" />
-
-
+            {["React", "Pandas", "TailwindCSS", "Matplotlib", "Swiper JS"].map((title) => (
+              <div
+                key={title}
+                className="hover:scale-105 transition-transform duration-300 hover:shadow-lg"
+              >
+                <SkillCard title={title} />
+              </div>
+            ))}
           </div>
         </div>
 
@@ -42,14 +48,22 @@ export default function SkillsSection() {
             Tools & Environments
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            <SkillCard title="Visual Studio Code" />
-            <SkillCard title="Git/GitHub" />
-            <SkillCard title="IntelliJ IDEA" />
-            <SkillCard title="PyCharm" />
-            <SkillCard title="Docker" />
-            <SkillCard title="Figma" />
-            <SkillCard title="WordPress" />
-
+            {[
+              "Visual Studio Code",
+              "Git/GitHub",
+              "IntelliJ IDEA",
+              "PyCharm",
+              "Docker",
+              "Figma",
+              "WordPress",
+            ].map((title) => (
+              <div
+                key={title}
+                className="hover:scale-105 transition-transform duration-300 hover:shadow-lg"
+              >
+                <SkillCard title={title} />
+              </div>
+            ))}
           </div>
         </div>
       </div>

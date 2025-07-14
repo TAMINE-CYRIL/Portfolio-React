@@ -1,19 +1,52 @@
 import { Link } from "react-router-dom";
 
-export default function Header(){
-    return(
+export default function Header() {
+  return (
     <header>
-        <nav className="flex shadow-md justify-end">
-            <ul className="md:flex items-center space-x-8 p-8">
-                <Link to="/"><li className="text-lg font-bold text-white-600">Home</li></Link>
-                <Link to="/about"><li className="text-lg font-bold text-white-600">About</li></Link>
-                <Link to="/project"><li className="text-lg font-bold text-white-600">Project</li></Link>
-                <Link to="/contact"><li className="text-lg font-bold text-white-600">Contact</li></Link>
+      <nav className="flex items-center justify-between shadow-md bg-white dark:bg-gray-900 px-8 py-4">
+        <div>
+          <Link to="/">
+            <span className="text-xl font-bold text-gray-800 dark:text-white hover:text-amber-500 transition-colors duration-300">
+              CT    
+            </span>
+          </Link>
+        </div>
 
-            </ul>
-
-        </nav>
-    </header>   
-    )
-    
+        <ul className="flex items-center space-x-8">
+          <li>
+            <Link
+              to="/"
+              className="text-lg font-bold text-gray-700 dark:text-white hover:text-amber-500 transition-colors duration-300"
+            >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/about"
+              className="text-lg font-bold text-gray-700 dark:text-white hover:text-amber-500 transition-colors duration-300"
+            >
+              About
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/project"
+              className="text-lg font-bold text-gray-700 dark:text-white hover:text-amber-500 transition-colors duration-300"
+            >
+              Project
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/contact"
+              className="text-lg font-bold text-gray-700 dark:text-white hover:text-amber-500 transition-colors duration-300"
+            >
+              Contact
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  );
 }

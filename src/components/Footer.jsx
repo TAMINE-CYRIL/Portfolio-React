@@ -15,14 +15,14 @@ export default function Footer() {
             <img
               src={github}
               alt="GitHub logo"
-              className="w-8 transition-all duration-300 hover:w-[35px] hover:shadow-lg rounded"
+              className="w-8 transition-all duration-300 hover:w-[35px]"
             />
           </a>
           <a href="https://www.linkedin.com/in/cyril-tamine-9068642b4/" target="_blank">
             <img
               src={linkedin}
               alt="LinkedIn logo"
-              className="w-8 transition-all duration-300 hover:w-[35px] hover:shadow-lg rounded"
+              className="w-8 transition-all duration-300 hover:w-[35px]"
             />
           </a>
         </div>
