@@ -34,6 +34,19 @@ const projet =[
     github:"https://github.com/RIGAT-Pierre-andre-2326090par/Projet-Php_R3.01",
     languages: ["PHP", "HTML", "CSS", "JavaScript"]
 
+},
+{
+    id:5,
+    title:"ETU Website",
+    desc: "Website built for students in the BUT Informatique program at IUT Aix-Marseille. It centralizes course links, useful tools, recommended software, and campus information, with a clean layout and optional dark mode for better usability.",
+    github:"https://github.com/TORCHIN-Maxence-24020376/Site-ETU",
+    languages: ["HTML, CSS, JavaScript"]
+},
+{
+    id:6,
+    title: "Chess Game",
+    desc: "JavaFX application inspired by chess.com, developed to practice OOP, UI design, and the MVC architecture. Features include local multiplayer, basic AI, time limits, player stats, game saving/loading, and a single-elimination tournament mode.",
+    languages: ["Java", "JavaFX"]
 }
 
 
