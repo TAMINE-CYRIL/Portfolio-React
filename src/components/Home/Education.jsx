@@ -1,6 +1,8 @@
 import educationData from "./educationData";
 
 export default function Education() {
+  
+
   return (
     <div className="relative border-l-2 border-gray-300 ml-4 pl-6">
       {educationData.map((item, index) => (

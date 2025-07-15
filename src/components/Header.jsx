@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
+import LanguageSelector from './LanguageSelector';
 
 export default function Header() {
+  const { t } = useTranslation();
+
   return (
     <header>
       <nav className="flex items-center justify-between shadow-md bg-white dark:bg-gray-900 px-8 py-4">
@@ -10,7 +14,7 @@ export default function Header() {
               to="/"
               className="text-lg font-bold text-gray-700 dark:text-white hover:text-amber-500 transition-colors duration-300"
             >
-              Home
+              {t('nav.home')}
             </Link>
           </li>
           <li>
@@ -18,7 +22,7 @@ export default function Header() {
               to="/about"
               className="text-lg font-bold text-gray-700 dark:text-white hover:text-amber-500 transition-colors duration-300"
             >
-              About
+              {t('nav.about')}
             </Link>
           </li>
           <li>
@@ -26,7 +30,7 @@ export default function Header() {
               to="/project"
               className="text-lg font-bold text-gray-700 dark:text-white hover:text-amber-500 transition-colors duration-300"
             >
-              Project
+              {t('nav.project')}
             </Link>
           </li>
           <li>
@@ -34,10 +38,11 @@ export default function Header() {
               to="/contact"
               className="text-lg font-bold text-gray-700 dark:text-white hover:text-amber-500 transition-colors duration-300"
             >
-              Contact
+              {t('nav.contact')}
             </Link>
           </li>
         </ul>
+        <LanguageSelector />
       </nav>
     </header>
   );

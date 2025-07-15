@@ -1,14 +1,17 @@
 import { AiFillGithub } from "react-icons/ai";
 import { AiFillLinkedin } from "react-icons/ai";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="py-6 mt-12 shadow-[0_-4px_10px_rgba(0,0,0,0.15)]">
       <div className="max-w-4xl mx-auto px-4 text-center space-y-2">
         <p className="text-sm">
-          Developed and designed by <span className="font-semibold">Cyril Tamine</span>
+          {t('footer.developedBy')} <span className="font-semibold">Cyril Tamine</span>
         </p>
-        <p className="text-sm">© 2025 - Tous droits réservés</p>
+        <p className="text-sm">{t('footer.rights')}</p>
         <div className="flex justify-center space-x-6 pt-2">
           <a href="https://github.com/TAMINE-CYRIL" target="_blank">
             <AiFillGithub className="text-3xl transition-transform duration-300 hover:scale-125" />

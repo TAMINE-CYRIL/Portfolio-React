@@ -1,19 +1,22 @@
+import { useTranslation } from "react-i18next";
 import SkillCard from "./SkillCard";
 
 export default function SkillsSection() {
+
+  const { t } = useTranslation();
+
   return (
     <section className="max-w-6xl mx-auto px-4 py-8">
       <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-8 text-center">
-        My Technical{" "}
         <span className="text-amber-500 bg-clip-text text-shadow-sm">
-          Skills
+          {t('about.skills')}
         </span>
       </h2>
 
       <div className="space-y-10">
         <div>
           <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-300 mb-4">
-            Programming Languages
+            {t('about.categories.languages')}
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {["Java", "C++", "Python", "JavaScript", "HTML/CSS", "PHP"].map((title) => (
@@ -29,7 +32,7 @@ export default function SkillsSection() {
 
         <div>
           <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-300 mb-4">
-            Frameworks & Libraries
+            {t('about.categories.frameworks')}
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {["React", "Pandas", "TailwindCSS", "Matplotlib", "Swiper JS"].map((title) => (
@@ -45,7 +48,7 @@ export default function SkillsSection() {
 
         <div>
           <h3 className="text-xl font-semibold text-gray-700 dark:text-gray-300 mb-4">
-            Tools & Environments
+            {t('about.categories.tools')}
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {[

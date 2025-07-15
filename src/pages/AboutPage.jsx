@@ -2,8 +2,12 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import icon from "../assets/iconAbout.png";
 import SkillsSection from "../components/About/SkillsSection";
+import { useTranslation } from "react-i18next";
 
 export default function AboutPage(){
+
+    const {t} = useTranslation();
+
     return(
         <>
             <Header />
@@ -12,26 +16,23 @@ export default function AboutPage(){
 
                 <div className="flex flex-col gap-4 max-w-2xl">
                     <h1 className="text-2xl font-bold text-center">
-                    Get to Know <span className="text-amber-500">Me</span>
+                    {t('about.title')}<span className="text-amber-500">{t('about.me')}</span>
                     </h1>
 
                     <p>
-                    I'm a passionate Computer Science student currently enrolled at IUT Aix-Marseille in Aix-en-Provence.
-                    I have a strong interest in software development and web technologies. I love transforming ideas into
-                    functional applications and am always looking for new ways to learn and grow through hands-on experience.
+                        {t('about.description1')}
                     </p>
 
                     <p>
-                    I'm actively seeking a work-study opportunity where I can contribute to impactful projects,
-                    apply my technical skills, and learn from experienced professionals while continuing my academic journey.
+                        {t('about.description2')}
                     </p>
 
                     <div>
-                    <p>Beyond coding, I also enjoy:</p>
+                    <p>{t('about.beyondCoding')}</p>
                     <ul className="list-disc list-inside">
-                        <li>Playing video games</li>
-                        <li>Reading</li>
-                        <li>Drawing</li>
+                        <li>{t('about.hobbies.gaming')}</li>
+                        <li>{t('about.hobbies.reading')}</li>
+                        <li>{t('about.hobbies.drawing')}</li>
                     </ul>
                     </div>
                 </div>

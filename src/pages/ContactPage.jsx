@@ -1,8 +1,12 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import illustration from "../assets/contact.avif";
+import { useTranslation } from "react-i18next";
 
 export default function ContactPage() {
+
+    const {t} = useTranslation();
+
     return (
         <>
             <Header />
@@ -11,9 +15,9 @@ export default function ContactPage() {
                 
                 <div className="flex-1 dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden w-full">
                     <div className="p-8">
-                        <h1 className="text-3xl font-bold dark:text-white mb-2">To contact me</h1>
+                        <h1 className="text-3xl font-bold dark:text-white mb-2">{t('contact.title')}</h1>
                         <p className="dark:text-gray-300 mb-6">
-                            Let's get in touch !
+                            {t('contact.subtitle')}
                         </p>
 
                         <form className="space-y-6">
@@ -22,12 +26,12 @@ export default function ContactPage() {
                                     htmlFor="name"
                                     className="block text-sm font-medium dark:text-gray-300 mb-1"
                                 >
-                                    Your name
+                                    {t('contact.form.name')}
                                 </label>
                                 <input
                                     id="name"
                                     type="text"
-                                    placeholder="Your name..."
+                                    placeholder={t('contact.form.namePlaceholder')}
                                     className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white transition duration-200"
                                     required
                                 />
@@ -36,12 +40,13 @@ export default function ContactPage() {
                                     htmlFor="email"
                                     className="block text-sm font-medium dark:text-gray-300 mt-4 mb-1"
                                 >
-                                    Your email
+                                    {t('contact.form.email')}
+
                                 </label>
                                 <input
                                     id="email"
                                     type="email"
-                                    placeholder="your@email.com"
+                                    placeholder={t('contact.form.emailPlaceholder')}
                                     className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition duration-200"
                                     required
                                 />
@@ -52,12 +57,12 @@ export default function ContactPage() {
                                     htmlFor="message"
                                     className="block text-sm font-medium dark:text-gray-300 mb-1"
                                 >
-                                    Your message
+                                    {t('contact.form.message')}
                                 </label>
                                 <textarea
                                     id="message"
                                     rows={5}
-                                    placeholder="Your message..."
+                                    placeholder={t('contact.form.messagePlaceholder')}
                                     className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white transition duration-200"
                                     required
                                 />
@@ -68,7 +73,7 @@ export default function ContactPage() {
                                     type="submit"
                                     className="w-full bg-amber-500 hover:bg-amber-600 text-white font-medium py-3 px-4 rounded-lg transition duration-200 transform hover:scale-105"
                                 >
-                                    Send
+                                    {t('contact.form.send')}
                                 </button>
                             </div>
                         </form>
