@@ -1,7 +1,9 @@
-import educationData from "./educationData";
+import { useTranslation } from "react-i18next";
 
 export default function Education() {
+  const { t } = useTranslation();
   
+  const educationData = t('education.list', { returnObjects: true });
 
   return (
     <div className="relative border-l-2 border-gray-300 ml-4 pl-6">

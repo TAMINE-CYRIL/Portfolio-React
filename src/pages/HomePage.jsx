@@ -37,7 +37,8 @@ export default function HomePage() {
                     alt="Homepage Illustration"
                 />
             </section>
-            <section className="flex flex-col justify-center items-center">
+            <hr />
+            <section className="flex flex-col justify-center items-center p-6 mt-8">
                 <h1>{t('home.education')}</h1>
                 <Education />
             </section>

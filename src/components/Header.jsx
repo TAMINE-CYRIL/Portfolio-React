@@ -7,8 +7,10 @@ export default function Header() {
 
   return (
     <header>
-      <nav className="flex items-center justify-between shadow-md bg-white dark:bg-gray-900 px-8 py-4">
+      <nav className="flex items-center justify-between shadow-md bg-white px-8 py-4">
         <ul className="flex items-center space-x-8">
+          <LanguageSelector />
+
           <li>
             <Link
               to="/"
@@ -41,8 +43,8 @@ export default function Header() {
               {t('nav.contact')}
             </Link>
           </li>
+
         </ul>
-        <LanguageSelector />
       </nav>
     </header>
   );
