@@ -17,7 +17,8 @@ const resources = {
         quote: "Front-end development is the art of bringing logic to life. It's the bridge between what is imagined and what is felt. It demands empathy, precision, and the humility to know that perfection is never finished — only deployed.",
         contactMe: "Contact Me",
         downloadCV: "Download CV",
-        education: "Education"
+        education: "Education",
+        experience: "Experience"
       },
       
       about: {
@@ -139,7 +140,9 @@ const resources = {
         quote: "Le développement front-end est l'art de donner vie à la logique. C'est le pont entre ce qui est imaginé et ce qui est ressenti. Il demande de l'empathie, de la précision et l'humilité de savoir que la perfection n'est jamais terminée — seulement déployée.",
         contactMe: "Me contacter",
         downloadCV: "Télécharger CV",
-        education: "Formation"
+        education: "Formation",
+        experience: "Expérience"
+
       },
       
       about: {

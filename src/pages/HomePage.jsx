@@ -38,9 +38,16 @@ export default function HomePage() {
                 />
             </section>
             <hr />
-            <section className="flex flex-col justify-center items-center p-6 mt-8">
-                <h1>{t('home.education')}</h1>
+            <section className="flex flex-col items-center p-6 mt-8">
+                <section className="mb-12 p-10">
+                    <h1 className="text-3xl font-bold p-4">{t('home.education')}</h1>
                 <Education />
+                </section>
+                <section className="mb-12 p-10">
+                    <h1 className="text-3xl font-bold p-4">{t('home.experience')}</h1>
+                </section>
+
+
             </section>
             <Footer />
         </>
