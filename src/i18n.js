@@ -107,13 +107,13 @@ const resources = {
             id: 1,
             title: "Computer Science Degree",
             date: "2023 - ongoing",
-            description: "Multidisciplinary training in computer science."
+            description: "The BUT in Computer Science is a 3-year program that trains specialists in software development, networks, and IT project management.",
           },
           {
             id: 2,
             title: "General Baccalaureate – Math & Computer Science Specialties",
             date: "2021 - 2023",
-            description: "High honors."
+            description: "French general Baccalauréat with Math and Computer Science specialties, awarded with highest honors."          
           }
         ]
       },
@@ -246,13 +246,13 @@ const resources = {
             id: 1,
             title: "BUT Informatique",
             date: "2023 - en cours",
-            description: "Formation pluridisciplinaire en informatique."
+            description: "Le BUT Informatique est une formation en 3 ans qui forme des spécialistes du développement, des réseaux et de la gestion de projets informatiques."
           },
           {
             id: 2,
             title: "Baccalauréat Général – Spécialités Maths & NSI",
             date: "2021 - 2023",
-            description: "Mention très bien."
+            description: "Baccalauréat général obtenu avec les spécialités Maths & NSI ainsi que la mention très bien."
           }
         ]
       },
