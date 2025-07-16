@@ -3,6 +3,8 @@ import Header from "../components/Header";
 import icon from "../assets/iconAbout.png";
 import SkillsSection from "../components/About/SkillsSection";
 import { useTranslation } from "react-i18next";
+import Education from "../components/About/Education";
+import Experience from "../components/About/Experience";
 
 export default function AboutPage(){
 
@@ -37,6 +39,22 @@ export default function AboutPage(){
                     </div>
                 </div>
             </section>
+
+            <section className="flex flex-col items-center gap-12 py-12">
+
+                <section className="max-w-3xl w-full px-8">
+                    <h1 className="text-3xl font-bold p-4">{t('about.education')}</h1>
+                    <Education />
+                </section>
+
+                <section className="self-end max-w-3xl w-full px-8">
+                    <h1 className="text-3xl font-bold p-4">{t('about.experience')}</h1>
+                    <Experience />
+                </section>
+
+            </section>
+
+
 
  
             <SkillsSection />   

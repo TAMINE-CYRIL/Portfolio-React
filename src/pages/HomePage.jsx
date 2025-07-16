@@ -2,7 +2,7 @@ import Footer from "../components/Footer"
 import Header from "../components/Header"
 import illustration from "../assets/illustration.jpg"
 import { FaEnvelope, FaDownload } from "react-icons/fa"
-import Education from "../components/Home/Education"
+import Education from "../components/About/Education"
 import { useTranslation } from 'react-i18next'
 
 export default function HomePage() {
@@ -36,18 +36,6 @@ export default function HomePage() {
                     src={illustration}
                     alt="Homepage Illustration"
                 />
-            </section>
-            <hr />
-            <section className="flex flex-col items-center p-6 mt-8">
-                <section className="mb-12 p-10">
-                    <h1 className="text-3xl font-bold p-4">{t('home.education')}</h1>
-                <Education />
-                </section>
-                <section className="mb-12 p-10">
-                    <h1 className="text-3xl font-bold p-4">{t('home.experience')}</h1>
-                </section>
-
-
             </section>
             <Footer />
         </>

@@ -17,8 +17,6 @@ const resources = {
         quote: "Front-end development is the art of bringing logic to life. It's the bridge between what is imagined and what is felt. It demands empathy, precision, and the humility to know that perfection is never finished — only deployed.",
         contactMe: "Contact Me",
         downloadCV: "Download CV",
-        education: "Education",
-        experience: "Experience"
       },
       
       about: {
@@ -37,7 +35,9 @@ const resources = {
           languages: "Programming Languages",
           frameworks: "Frameworks & Libraries",
           tools: "Tools & Environments"
-        }
+        },
+        education: "Education",
+        experience: "Experience"
       },
       
       contact: {
@@ -118,6 +118,20 @@ const resources = {
         ]
       },
 
+      experience: {
+        list:[
+          {
+            id:1,
+            title: "Web Developer",
+            date: "May 2025 - June 2025",
+            job: "Internship",
+            desc: "Designed and developed a new Education section for the company website.",
+            technologies:["PHP", "WordPress", "JavaScript", "Figma"]
+
+          }
+        ]
+      },
+
       footer: {
         developedBy: "Developed and designed by",
         rights: "© 2025 - All rights reserved"
@@ -140,8 +154,7 @@ const resources = {
         quote: "Le développement front-end est l'art de donner vie à la logique. C'est le pont entre ce qui est imaginé et ce qui est ressenti. Il demande de l'empathie, de la précision et l'humilité de savoir que la perfection n'est jamais terminée — seulement déployée.",
         contactMe: "Me contacter",
         downloadCV: "Télécharger CV",
-        education: "Formation",
-        experience: "Expérience"
+
 
       },
       
@@ -156,6 +169,8 @@ const resources = {
           reading: "Lire",
           drawing: "Dessiner"
         },
+        education: "Formation",
+        experience: "Expérience",
         skills: "Mes compétences techniques",
         categories: {
           languages: "Langages de programmation",
@@ -238,6 +253,20 @@ const resources = {
             title: "Baccalauréat Général – Spécialités Maths & NSI",
             date: "2021 - 2023",
             description: "Mention très bien."
+          }
+        ]
+      },
+
+      experience: {
+        list:[
+          {
+            id:1,
+            title: "Développeur Web",
+            date: "Mai 2025 - Juin 2025",
+            job: "Stage",
+            desc: "Développement d'une nouvelle section Formation sur le site de l'entreprise.",
+            technologies:["PHP", "WordPress", "JavaScript", "Figma"]
+
           }
         ]
       },
