@@ -39,6 +39,7 @@ export default function AboutPage(){
                     </div>
                 </div>
             </section>
+            <hr />
 
             <section className="flex flex-col items-center gap-12 py-12">
 
@@ -46,13 +47,14 @@ export default function AboutPage(){
                     <h1 className="text-3xl font-bold p-4">{t('about.education')}</h1>
                     <Education />
                 </section>
-
                 <section className="self-end max-w-3xl w-full px-8">
                     <h1 className="text-3xl font-bold p-4">{t('about.experience')}</h1>
                     <Experience />
                 </section>
 
             </section>
+            <hr />
+
 
 
 

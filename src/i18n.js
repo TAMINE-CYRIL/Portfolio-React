@@ -15,7 +15,7 @@ const resources = {
         role: "Web Developer",
         greeting: "Hi, I am",
         quote: "Front-end development is the art of bringing logic to life. It's the bridge between what is imagined and what is felt. It demands empathy, precision, and the humility to know that perfection is never finished — only deployed.",
-        contactMe: "Contact Me",
+        contactMe: "Contact me",
         downloadCV: "Download CV",
       },
       
@@ -96,6 +96,7 @@ const resources = {
             id: 6,
             title: "Chess Game",
             desc: "JavaFX application inspired by chess.com, developed to practice OOP, UI design, and the MVC architecture. Features include local multiplayer, basic AI, time limits, player stats, game saving/loading, and a single-elimination tournament mode.",
+            github:"https://github.com/TAMINE-CYRIL/SAES2.01",
             languages: ["Java", "JavaFX"]
           }
         ]
@@ -235,6 +236,7 @@ const resources = {
             id: 6,
             title: "Jeu d'Échecs",
             desc: "Application JavaFX inspirée de chess.com, développée pour pratiquer la POO, la conception d'interface utilisateur et l'architecture MVC. Les fonctionnalités incluent le multijoueur local, une IA basique, des limites de temps, des statistiques de joueurs, la sauvegarde/chargement de parties et un mode tournoi à élimination directe.",
+            github:"https://github.com/TAMINE-CYRIL/SAES2.01",
             languages: ["Java", "JavaFX"]
           }
         ]

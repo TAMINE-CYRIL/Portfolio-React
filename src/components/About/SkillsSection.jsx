@@ -35,7 +35,7 @@ export default function SkillsSection() {
             {t('about.categories.frameworks')}
           </h3>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            {["React", "Pandas", "TailwindCSS", "Matplotlib", "Swiper JS"].map((title) => (
+            {["React", "Pandas", "TailwindCSS", "Matplotlib", "Swiper JS", "Seaborn", "NumPy"].map((title) => (
               <div
                 key={title}
                 className="hover:scale-105 transition-transform duration-300 hover:shadow-lg"

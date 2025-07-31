@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import Project from "../components/Project/Project";
 import { useTranslation } from "react-i18next";
 
+
 export default function ProjectPage() {
     const { t } = useTranslation();
     
@@ -13,7 +14,7 @@ export default function ProjectPage() {
             <Header />
             <section className="flex justify-center flex-col items-center p-6">
                 <h1 className="text-amber-500 text-xl font-bold">Projects</h1>
-                <p>These projects demonstrate 
+                <p className="flex justify-center p-10">These projects demonstrate 
                     my expertise with practical 
                     examples of some of my work, 
                     including brief descriptions and links to code repositories 
