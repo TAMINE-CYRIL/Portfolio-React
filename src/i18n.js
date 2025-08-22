@@ -30,7 +30,7 @@ const resources = {
           reading: "Reading",
           drawing: "Drawing"
         },
-        skills: "My Technical Skills",
+        skills: "Technical Skills",
         categories: {
           languages: "Programming Languages",
           frameworks: "Frameworks & Libraries",
@@ -108,12 +108,16 @@ const resources = {
           {
             id: 1,
             title: "Computer Science Degree",
+            location: "Aix-en-Provence",
+            school:"IUT Aix-Marseille",
             date: "2023 - ongoing",
             description: "The BUT in Computer Science is a 3-year program that trains specialists in software development, networks, and IT project management.",
           },
           {
             id: 2,
             title: "General Baccalaureate – Math & Computer Science Specialties",
+            location:"Marseille",
+            school:"Lycée Artaud (High School)",
             date: "2021 - 2023",
             description: "French general Baccalauréat with Math and Computer Science specialties, awarded with highest honors."          
           }
@@ -173,7 +177,7 @@ const resources = {
         },
         education: "Formation",
         experience: "Expérience",
-        skills: "Mes compétences techniques",
+        skills: "Compétences techniques",
         categories: {
           languages: "Langages de programmation",
           frameworks: "Frameworks et bibliothèques",
@@ -249,12 +253,16 @@ const resources = {
           {
             id: 1,
             title: "BUT Informatique",
+            school: "IUT Aix-Marseille",
+            location: "Aix-en-Provence",
             date: "2023 - en cours",
             description: "Le BUT Informatique est une formation en 3 ans qui forme des spécialistes du développement, des réseaux et de la gestion de projets informatiques."
           },
           {
             id: 2,
             title: "Baccalauréat Général – Spécialités Maths & NSI",
+            school: "Lycée Artaud",
+            location:"Marseille",
             date: "2021 - 2023",
             description: "Baccalauréat général obtenu avec les spécialités Maths & NSI ainsi que la mention très bien."
           }
