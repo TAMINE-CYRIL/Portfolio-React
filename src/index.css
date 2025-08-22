@@ -1,8 +1,6 @@
 @import "tailwindcss";
-/* ===== Import des polices Google Fonts ===== */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@700&family=Inter:wght@400;500&family=Lora:ital@1&family=Manrope:wght@600&family=Space+Mono&display=swap');
 
-/* ===== Classes utilitaires pour les polices ===== */
 :root {
   color-scheme: light dark;
   color: rgba(0, 0, 0, 0.87);
@@ -65,13 +63,13 @@
 
 .font-hero {
   font-family: 'Bebas Neue', sans-serif;
-  font-weight: 400; /* Poids unique, ultra-gras par défaut */
+  font-weight: 400; 
   letter-spacing: 0.05em;
 }
 
 .font-hero {
   font-family: 'Bebas Neue', sans-serif;
-  font-weight: 400; /* Poids unique, ultra-gras par défaut */
+  font-weight: 400; 
   letter-spacing: 0.05em;
 }
 

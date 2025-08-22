@@ -55,6 +55,7 @@ const resources = {
       },
       
       projects: {
+        description: "Explore my curated collection of projects that demonstrate technical expertise through real-world applications. Each project showcases problem-solving skills, modern technologies, and clean code practices.",
         githubRepo: "GitHub Repository",
         list: [
           {
@@ -196,6 +197,7 @@ const resources = {
       
       projects: {
         githubRepo: "Dépôt GitHub",
+        description: "Découvrez ma collection de projets qui illustrent mon expertise technique à travers des applications concrètes. Chaque projet démontre mes compétences en résolution de problèmes, technologies modernes et bonnes pratiques de développement.",
         list: [
           {
             id: 1,
