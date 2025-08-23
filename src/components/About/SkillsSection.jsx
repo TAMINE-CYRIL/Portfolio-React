@@ -6,6 +6,37 @@ import { SiFramework } from "react-icons/si";
 
 export default function SkillsSection() {
 
+  const languages = [
+    "Java", 
+    "C++", 
+    "Python",
+    "JavaScript",
+    "HTML/CSS",
+    "PHP"
+  ]
+
+  const frameworks = [
+    "React", 
+    "Pandas", 
+    "TailwindCSS",
+   "Matplotlib", 
+   "Swiper JS", 
+   "Seaborn", 
+   "NumPy"
+  ]
+
+  const tools = [
+    "Visual Studio Code",
+    "Git/GitHub",
+    "IntelliJ IDEA",
+    "PyCharm",
+    "Docker",
+    "Figma",
+    "WordPress",
+    ]
+
+          
+
   const { t } = useTranslation();
   return (
     <section className="max-w-6xl mx-auto px-4 py-8">
@@ -17,11 +48,16 @@ export default function SkillsSection() {
 
       <div className="space-y-10">
         <div>
-          <h3 className="text-xl flex items-center gap-2 font-semibold text-gray-700 dark:text-gray-300 mb-4">
-            <BiCode /> {t('about.categories.languages')}
-          </h3>
+          <section className="flex items-center gap-2 text-xl 2 font-semibold text-gray-700 dark:text-gray-300 mb-4" >
+              <div className="bg-gradient-to-r from-amber-400 to-orange-500 rounded-lg p-3">
+                <BiCode className="text-white text-2xl"/>
+              </div>
+            <h3>
+              {t('about.categories.languages')}
+            </h3>
+          </section>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            {["Java", "C++", "Python", "JavaScript", "HTML/CSS", "PHP"].map((title) => (
+            {languages.map((title) => (
               <div
                 key={title}
                 className="hover:scale-105 transition-transform duration-300 hover:shadow-lg"
@@ -33,11 +69,17 @@ export default function SkillsSection() {
         </div>
 
         <div>
-          <h3 className="text-xl flex items-center gap-2 font-semibold text-gray-700 dark:text-gray-300 mb-4">
-            <SiFramework /> {t('about.categories.frameworks')}
-          </h3>
+          <section className="flex items-center gap-2 text-xl font-semibold text-gray-700 dark:text-gray-300 mb-4">
+            <div className="bg-gradient-to-r from-emerald-400 to-teal-500 rounded-lg p-3">
+              <SiFramework className="text-white text-2xl" />
+            </div>
+            <h3>
+              {t('about.categories.frameworks')}
+            </h3>
+          </section>
+
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            {["React", "Pandas", "TailwindCSS", "Matplotlib", "Swiper JS", "Seaborn", "NumPy"].map((title) => (
+            {frameworks.map((title) => (
               <div
                 key={title}
                 className="hover:scale-105 transition-transform duration-300 hover:shadow-lg"
@@ -49,19 +91,16 @@ export default function SkillsSection() {
         </div>
 
         <div>
-          <h3 className="text-xl flex items-center gap-2 font-semibold text-gray-700 dark:text-gray-300 mb-4">
-                 <BsTools /> {t('about.categories.tools')}
-          </h3>
+          <section className="flex items-center gap-2 text-xl font-semibold text-gray-700 dark:text-gray-300 mb-4">
+            <div className="bg-gradient-to-r from-sky-400 to-blue-500 rounded-lg p-3">
+              <BsTools className="text-white text-2xl" />
+            </div>
+            <h3>
+              {t('about.categories.tools')}
+            </h3>
+          </section>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-            {[
-              "Visual Studio Code",
-              "Git/GitHub",
-              "IntelliJ IDEA",
-              "PyCharm",
-              "Docker",
-              "Figma",
-              "WordPress",
-            ].map((title) => (
+            {tools.map((title) => (
               <div
                 key={title}
                 className="hover:scale-105 transition-transform duration-300 hover:shadow-lg"
@@ -71,6 +110,23 @@ export default function SkillsSection() {
             ))}
           </div>
         </div>
+
+        <section className="flex flex-col items-center transition-transform duration-300 hover:shadow-md shadow-sm p-3 rounded-lg">
+          <h2 className="text-3xl bg-gradient-to-r bg-clip-text text-transparent from-amber-400 to-orange-500 font-bold">{languages.length}</h2>
+          <p className="text-lg">Languages</p>
+        </section>
+
+        <section className="flex flex-col items-center transition-transform duration-300 hover:shadow-md shadow-sm p-3 rounded-lg">
+          <h2 className="text-3xl bg-gradient-to-r bg-clip-text text-transparent from-emerald-400 to-teal-500 font-bold">{frameworks.length}</h2>
+          <p className="text-lg">Frameworks & Libraries</p>
+        </section>
+
+        <section className="flex flex-col transition-transform duration-300 hover:shadow-md items-center shadow-sm p-3 rounded-lg">
+          <h2 className="text-3xl bg-gradient-to-r bg-clip-text text-transparent from-sky-400 to-blue-500  font-bold">{tools.length}</h2>
+          <p className="text-lg">Tools</p>
+        </section>
+
+
       </div>
     </section>
   );
