@@ -24,7 +24,7 @@ export default function HomePage() {
                         {t('home.greeting')} <span className="text-amber-500 font-bold">CYRIL TAMINE</span>
                     </h1>
                     <p className="font-inter text-gray-700 leading-relaxed text-md md:text-lg mb-6">
-                        {t('home.quote')}
+                        "{t('home.quote')}"
                     </p>
                     <section className="flex gap-4">
                         <button className="flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-white font-semibold px-6 py-3 rounded-full shadow-md transition duration-300">
