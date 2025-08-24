@@ -2,11 +2,29 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import illustration from "../assets/contact.avif";
 import { useTranslation } from "react-i18next";
+import emailjs from "emailjs-com";
+import { useRef } from "react";
+
 
 export default function ContactPage() {
 
     const {t} = useTranslation();
+    const form = useRef();
 
+    const sendEmail = (e) => {
+        e.preventDefault();
+    
+        emailjs
+        .sendForm('service_08wiv54', 'template_ytljt1k', form.current, '6H1Mn0Uyg8JJrwAsR')
+        .then(
+            () => {
+                console.log('SUCCESS !');
+            },
+            (error) => 
+                {console.log('FAILED...', error.text);
+            },
+        );
+    }
     return (
         <>
             <Header />
@@ -20,16 +38,17 @@ export default function ContactPage() {
                             {t('contact.subtitle')}
                         </p>
 
-                        <form className="space-y-6">
+                        <form ref={form} onSubmit={sendEmail} className="space-y-6">
                             <div>
                                 <label
                                     htmlFor="name"
                                     className="block text-sm font-medium dark:text-gray-300 mb-1"
                                 >
-                                    {t('contact.form.name')}
+                                    {t('contact.form.name')}*
                                 </label>
                                 <input
                                     id="name"
+                                    name="user_name"
                                     type="text"
                                     placeholder={t('contact.form.namePlaceholder')}
                                     className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white transition duration-200"
@@ -40,11 +59,12 @@ export default function ContactPage() {
                                     htmlFor="email"
                                     className="block text-sm font-medium dark:text-gray-300 mt-4 mb-1"
                                 >
-                                    {t('contact.form.email')}
+                                    {t('contact.form.email')}*
 
                                 </label>
                                 <input
                                     id="email"
+                                    name="user_email"
                                     type="email"
                                     placeholder={t('contact.form.emailPlaceholder')}
                                     className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition duration-200"
@@ -57,10 +77,11 @@ export default function ContactPage() {
                                     htmlFor="message"
                                     className="block text-sm font-medium dark:text-gray-300 mb-1"
                                 >
-                                    {t('contact.form.message')}
+                                    {t('contact.form.message')}*
                                 </label>
                                 <textarea
                                     id="message"
+                                    name="message"
                                     rows={5}
                                     placeholder={t('contact.form.messagePlaceholder')}
                                     className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white transition duration-200"
