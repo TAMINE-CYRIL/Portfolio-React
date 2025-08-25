@@ -67,6 +67,7 @@ export default function SkillsSection() {
             ))}
           </div>
         </div>
+        <hr />
 
         <div>
           <section className="flex items-center gap-2 text-xl font-semibold text-gray-700 dark:text-gray-300 mb-4">
@@ -90,6 +91,8 @@ export default function SkillsSection() {
           </div>
         </div>
 
+        <hr />
+
         <div>
           <section className="flex items-center gap-2 text-xl font-semibold text-gray-700 dark:text-gray-300 mb-4">
             <div className="bg-gradient-to-r from-sky-400 to-blue-500 rounded-lg p-3">
@@ -110,6 +113,8 @@ export default function SkillsSection() {
             ))}
           </div>
         </div>
+        
+        <hr />
 
         <section className="flex flex-col items-center transition-transform duration-300 hover:shadow-md shadow-sm p-3 rounded-lg">
           <h2 className="text-3xl bg-gradient-to-r bg-clip-text text-transparent from-amber-400 to-orange-500 font-bold">{languages.length}</h2>

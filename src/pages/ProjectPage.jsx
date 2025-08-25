@@ -29,9 +29,9 @@ export default function ProjectPage() {
                     </p>
                     
                     <div className="flex flex-wrap justify-center gap-6 mt-10">
-                        <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm px-6 py-3 rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50">
+                        <div className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm px-6 py-3 rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 transition-all 300 hover:shadow-xl">
                             <div className="text-2xl font-bold text-amber-600 dark:text-amber-400">{projects.length}</div>
-                            <div className="text-sm text-gray-600 dark:text-gray-300">Projets</div>
+                            <div className="text-sm text-gray-600 dark:text-gray-300">{t('nav.project')}</div>
                         </div>
                     </div>
                 </div>

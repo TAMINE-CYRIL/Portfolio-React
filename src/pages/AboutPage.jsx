@@ -54,11 +54,6 @@ export default function AboutPage(){
 
             </section>
             <hr />
-
-
-
-
- 
             <SkillsSection />   
 
 
