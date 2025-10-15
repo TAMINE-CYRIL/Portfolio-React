@@ -129,11 +129,21 @@ const resources = {
           {
             id:1,
             title: "Web Developer",
+            company: "Adalab",
             date: "May 2025 - June 2025",
             job: "Internship",
             desc: "Designed and developed a new Education section for the company website.",
             technologies:["PHP", "WordPress", "JavaScript", "Figma"]
 
+          },
+          {
+            id:2,
+            title: "Full Stack Developer",
+            company: "Benjamin Immobilier",
+            date: "September 2025 - August 2026",
+            job: "Apprenticeship",
+            desc: "Developed a scraping application with database management and web interface.",
+            technologies:["React", "Node.js", "Express", "PostgreSQL", "Python", "Crawl4AI"]
           }
         ]
       },
@@ -274,11 +284,21 @@ const resources = {
           {
             id:1,
             title: "Développeur Web",
+            company: "Adalab",
             date: "Mai 2025 - Juin 2025",
             job: "Stage",
             desc: "Développement d'une nouvelle section Formation sur le site de l'entreprise.",
             technologies:["PHP", "WordPress", "JavaScript", "Figma"]
 
+          },
+          {
+            id:2,
+            title: "Développeur Full Stack",
+            company: "Benjamin Immobilier",
+            date: "Septembre 2025 - Août 2026",
+            job: "Alternance",
+            desc: "Développement d'un logiciel de scraping, avec gestion de bases de données, et interface web.",
+            technologies:["React", "Node.js", "Express", "PostgreSQL", "Python", "Crawl4AI"]
           }
         ]
       },

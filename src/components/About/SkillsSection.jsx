@@ -33,6 +33,7 @@ export default function SkillsSection() {
     "Docker",
     "Figma",
     "WordPress",
+    "Crawl4AI"
     ]
 
           
