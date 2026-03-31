@@ -29,12 +29,12 @@ export default function ContactPage() {
         <>
             <Header />
 
-            <section className="max-w-6xl mx-auto my-16 px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-8">
+            <section className="mx-auto my-16 flex max-w-6xl flex-col items-center gap-8 px-4 sm:px-6 lg:flex-row lg:px-8">
                 
-                <div className="flex-1 dark:bg-gray-800 rounded-lg shadow-xl overflow-hidden w-full">
+                <div className="w-full flex-1 overflow-hidden rounded-3xl border border-stone-200/80 bg-gradient-to-br from-white via-stone-50 to-amber-50/60 shadow-xl">
                     <div className="p-8">
-                        <h1 className="text-3xl font-bold dark:text-white mb-2">{t('contact.title')}</h1>
-                        <p className="dark:text-gray-300 mb-6">
+                        <h1 className="mb-2 text-3xl font-bold text-stone-900">{t('contact.title')}</h1>
+                        <p className="mb-6 text-stone-600">
                             {t('contact.subtitle')}
                         </p>
 
@@ -42,7 +42,7 @@ export default function ContactPage() {
                             <div>
                                 <label
                                     htmlFor="name"
-                                    className="block text-sm font-medium dark:text-gray-300 mb-1"
+                                    className="mb-1 block text-sm font-medium text-stone-700"
                                 >
                                     {t('contact.form.name')}*
                                 </label>
@@ -51,13 +51,13 @@ export default function ContactPage() {
                                     name="user_name"
                                     type="text"
                                     placeholder={t('contact.form.namePlaceholder')}
-                                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-700 dark:text-white transition duration-200"
+                                    className="w-full rounded-xl border border-stone-300 bg-white px-4 py-3 text-stone-800 placeholder:text-stone-400 transition duration-200 focus:border-amber-400 focus:outline-none focus:ring-4 focus:ring-amber-100"
                                     required
                                 />
 
                                 <label
                                     htmlFor="email"
-                                    className="block text-sm font-medium dark:text-gray-300 mt-4 mb-1"
+                                    className="mb-1 mt-4 block text-sm font-medium text-stone-700"
                                 >
                                     {t('contact.form.email')}*
 
@@ -67,7 +67,7 @@ export default function ContactPage() {
                                     name="user_email"
                                     type="email"
                                     placeholder={t('contact.form.emailPlaceholder')}
-                                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 focus:border-transparent dark:bg-gray-700 dark:text-white transition duration-200"
+                                    className="w-full rounded-xl border border-stone-300 bg-white px-4 py-3 text-stone-800 placeholder:text-stone-400 transition duration-200 focus:border-amber-400 focus:outline-none focus:ring-4 focus:ring-amber-100"
                                     required
                                 />
                             </div>
@@ -75,7 +75,7 @@ export default function ContactPage() {
                             <div>
                                 <label
                                     htmlFor="message"
-                                    className="block text-sm font-medium dark:text-gray-300 mb-1"
+                                    className="mb-1 block text-sm font-medium text-stone-700"
                                 >
                                     {t('contact.form.message')}*
                                 </label>
@@ -84,7 +84,7 @@ export default function ContactPage() {
                                     name="message"
                                     rows={5}
                                     placeholder={t('contact.form.messagePlaceholder')}
-                                    className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-white transition duration-200"
+                                    className="w-full rounded-xl border border-stone-300 bg-white px-4 py-3 text-stone-800 placeholder:text-stone-400 transition duration-200 focus:border-amber-400 focus:outline-none focus:ring-4 focus:ring-amber-100"
                                     required
                                 />
                             </div>
@@ -92,7 +92,7 @@ export default function ContactPage() {
                             <div>
                                 <button
                                     type="submit"
-                                    className="w-full bg-amber-500 hover:bg-amber-600 text-white font-medium py-3 px-4 rounded-lg transition duration-200 transform hover:scale-105"
+                                    className="w-full rounded-xl bg-amber-500 px-4 py-3 font-medium text-white transition duration-200 hover:scale-[1.02] hover:bg-amber-600"
                                 >
                                     {t('contact.form.send')}
                                 </button>
@@ -105,7 +105,7 @@ export default function ContactPage() {
                     <img
                         src={illustration}
                         alt="Contact illustration"
-                        className="w-full h-auto object-cover"
+                        className="h-auto w-full rounded-3xl border border-stone-200/70 object-cover shadow-lg"
                     />
                 </div>
             </section>

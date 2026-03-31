@@ -40,8 +40,8 @@ export default function SkillsSection() {
 
   const { t } = useTranslation();
   return (
-    <section className="max-w-6xl mx-auto px-4 py-8">
-      <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-8 text-center">
+    <section className="max-w-6xl mx-auto px-4 py-10">
+      <h2 className="mb-8 text-center text-3xl font-bold text-stone-900">
         <span className="bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">
           {t('about.skills')}
         </span>
@@ -49,9 +49,9 @@ export default function SkillsSection() {
 
       <div className="space-y-10">
         <div>
-          <section className="flex items-center gap-2 text-xl 2 font-semibold text-gray-700 dark:text-gray-300 mb-4" >
-              <div className="bg-gradient-to-r from-amber-400 to-orange-500 rounded-lg p-3">
-                <BiCode className="text-white text-2xl w-6 h-6"/>
+          <section className="mb-4 flex items-center gap-3 text-xl font-semibold text-stone-800">
+              <div className="rounded-xl bg-gradient-to-r from-amber-400 to-orange-500 p-3 shadow-sm">
+                <BiCode className="h-6 w-6 text-white text-2xl" />
               </div>
             <h3>
               {t('about.categories.languages')}
@@ -68,11 +68,11 @@ export default function SkillsSection() {
             ))}
           </div>
         </div>
-        <hr />
+        <hr className="border-stone-200" />
 
         <div>
-          <section className="flex items-center gap-2 text-xl font-semibold text-gray-700 dark:text-gray-300 mb-4">
-            <div className="bg-gradient-to-r from-emerald-400 to-teal-500 rounded-lg p-3">
+          <section className="mb-4 flex items-center gap-3 text-xl font-semibold text-stone-800">
+            <div className="rounded-xl bg-gradient-to-r from-emerald-400 to-teal-500 p-3 shadow-sm">
               <SiFramework className="text-white text-2xl w-6 h-6" />
             </div>
             <h3>
@@ -92,11 +92,11 @@ export default function SkillsSection() {
           </div>
         </div>
 
-        <hr />
+        <hr className="border-stone-200" />
 
         <div>
-          <section className="flex items-center gap-2 text-xl font-semibold text-gray-700 dark:text-gray-300 mb-4">
-            <div className="bg-gradient-to-r from-sky-400 to-blue-500 rounded-lg p-3">
+          <section className="mb-4 flex items-center gap-3 text-xl font-semibold text-stone-800">
+            <div className="rounded-xl bg-gradient-to-r from-sky-400 to-blue-500 p-3 shadow-sm">
               <BsTools className="text-white text-2xl h-6 w-6" />
             </div>
             <h3>
@@ -115,21 +115,21 @@ export default function SkillsSection() {
           </div>
         </div>
         
-        <hr />
+        <hr className="border-stone-200" />
 
-        <section className="flex flex-col items-center transition-transform duration-300 hover:shadow-md shadow-sm p-3 rounded-lg">
+        <section className="flex flex-col items-center rounded-2xl border border-amber-100 bg-gradient-to-br from-white to-amber-50 p-4 shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-md">
           <h2 className="text-3xl bg-gradient-to-r bg-clip-text text-transparent from-amber-400 to-orange-500 font-bold">{languages.length}</h2>
-          <p className="text-lg">{t('about.categories.languages')}</p>
+          <p className="text-lg text-stone-700">{t('about.categories.languages')}</p>
         </section>
 
-        <section className="flex flex-col items-center transition-transform duration-300 hover:shadow-md shadow-sm p-3 rounded-lg">
+        <section className="flex flex-col items-center rounded-2xl border border-emerald-100 bg-gradient-to-br from-white to-emerald-50 p-4 shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-md">
           <h2 className="text-3xl bg-gradient-to-r bg-clip-text text-transparent from-emerald-400 to-teal-500 font-bold">{frameworks.length}</h2>
-          <p className="text-lg">{t('about.categories.frameworks')}</p>
+          <p className="text-lg text-stone-700">{t('about.categories.frameworks')}</p>
         </section>
 
-        <section className="flex flex-col transition-transform duration-300 hover:shadow-md items-center shadow-sm p-3 rounded-lg">
+        <section className="flex flex-col items-center rounded-2xl border border-sky-100 bg-gradient-to-br from-white to-sky-50 p-4 shadow-sm transition-transform duration-300 hover:-translate-y-1 hover:shadow-md">
           <h2 className="text-3xl bg-gradient-to-r bg-clip-text text-transparent from-sky-400 to-blue-500  font-bold">{tools.length}</h2>
-          <p className="text-lg">{t('about.categories.tools')}</p>
+          <p className="text-lg text-stone-700">{t('about.categories.tools')}</p>
         </section>
 
 
