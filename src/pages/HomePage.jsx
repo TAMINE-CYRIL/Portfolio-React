@@ -9,7 +9,7 @@ export default function HomePage() {
 
     const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/path/to/your/cv.pdf'; 
+    link.href = 'public/CV_TAMINE.pdf'; 
     link.download = 'Cyril_Tamine_CV.pdf';
     link.click();
     };
