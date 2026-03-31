@@ -48,9 +48,18 @@ const resources = {
           namePlaceholder: "Your name...",
           email: "Your email",
           emailPlaceholder: "your@email.com",
+          subject: "Subject",
+          subjectPlaceholder: "Subject of your message...",
           message: "Your message",
           messagePlaceholder: "Your message...",
+          sending: "Sending...",
           send: "Send"
+        },
+        feedback: {
+          missingConfig: "EmailJS configuration is incomplete. Add the VITE_EMAILJS variables to your .env file.",
+          success: "Message sent successfully. I will reply as soon as possible.",
+          error: "Email sending failed. Please try again.",
+          errorWithDetails: "EmailJS error{{status}}{{details}}",
         }
       },
       
@@ -203,9 +212,18 @@ const resources = {
           namePlaceholder: "Votre nom...",
           email: "Votre email",
           emailPlaceholder: "votre@email.com",
+          subject: "Objet",
+          subjectPlaceholder: "Objet de votre message...",
           message: "Votre message",
           messagePlaceholder: "Votre message...",
+          sending: "Envoi en cours...",
           send: "Envoyer"
+        },
+        feedback: {
+          missingConfig: "La configuration EmailJS est incomplete. Ajoute les variables VITE_EMAILJS dans ton fichier .env.",
+          success: "Message envoye avec succes. Je vous repondrai des que possible.",
+          error: "L'envoi du message a echoue. Veuillez reessayer.",
+          errorWithDetails: "Erreur EmailJS{{status}}{{details}}",
         }
       },
       
