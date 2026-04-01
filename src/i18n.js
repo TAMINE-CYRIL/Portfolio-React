@@ -134,32 +134,31 @@ const resources = {
       },
 
       experience: {
-        list:[
+        list: [
           {
-            id:1,
-            title: "Web Developer",
-            company: "Adalab",
-            date: "May 2025 - June 2025",
-            job: "Internship",
-            desc: "Designed and developed a new Education section for the company website.",
-            technologies:["PHP", "WordPress", "JavaScript", "Figma"]
-
-          },
-          {
-            id:2,
+            id: 1,
             title: "Full Stack Developer",
             company: "Benjamin Immobilier",
             date: "September 2025 - August 2026",
             job: "Apprenticeship",
-            desc: "Developed a scraping application with database management and web interface.",
-            technologies:["React", "Node.js", "Express", "PostgreSQL", "Python", "Crawl4AI"]
+            desc: "Designed and developed a multi-source real estate data collection and analysis platform. Built scraping workflows, structured and integrated data into PostgreSQL, and contributed to the development of a web interface for data exploration and usage.",
+            technologies: ["Python", "PostgreSQL", "Django", "React", "Node.js", "Express", "Crawl4AI"]
+          },
+          {
+            id: 2,
+            title: "Web Developer",
+            company: "Adalab",
+            date: "April 2025 - May 2025",
+            job: "Internship",
+            desc: "Designed and developed a new Training section for the company website using WordPress. Contributed to interface improvements, web design, and the implementation of a booking system.",
+            technologies: ["PHP", "WordPress", "JavaScript", "CSS", "Figma"]
           }
         ]
       },
 
       footer: {
         developedBy: "Developed and designed by",
-        rights: "© 2025 - All rights reserved"
+        rights: "© 2026 - All rights reserved"
       }
     }
   },
@@ -298,32 +297,31 @@ const resources = {
       },
 
       experience: {
-        list:[
+        list: [
           {
-            id:1,
-            title: "Développeur Web",
-            company: "Adalab",
-            date: "Mai 2025 - Juin 2025",
-            job: "Stage",
-            desc: "Développement d'une nouvelle section Formation sur le site de l'entreprise.",
-            technologies:["PHP", "WordPress", "JavaScript", "Figma"]
-
-          },
-          {
-            id:2,
+            id: 1,
             title: "Développeur Full Stack",
             company: "Benjamin Immobilier",
             date: "Septembre 2025 - Août 2026",
             job: "Alternance",
-            desc: "Développement d'un logiciel de scraping, avec gestion de bases de données, et interface web.",
-            technologies:["React", "Node.js", "Express", "PostgreSQL", "Python", "Crawl4AI"]
+            desc: "Conception et développement d'une plateforme de collecte et d'analyse de données immobilières multi-sources. Mise en place de scripts de scraping, de traitements de structuration et d'intégration des données dans une base PostgreSQL, avec développement d'une interface web pour leur exploitation.",
+            technologies: ["Python", "PostgreSQL", "Django", "React", "Node.js", "Express", "Crawl4AI"]
+          },
+          {
+            id: 2,
+            title: "Développeur Web",
+            company: "Adalab",
+            date: "Avril 2025 - Mai 2025",
+            job: "Stage",
+            desc: "Développement et intégration d'une nouvelle section Formation sur le site de l'entreprise sous WordPress. Participation à l'amélioration de l'interface, au web design et à la mise en place d'un système de réservation.",
+            technologies: ["PHP", "WordPress", "JavaScript", "CSS", "Figma"]
           }
         ]
       },
       
       footer: {
         developedBy: "Développé et conçu par",
-        rights: "© 2025 - Tous droits réservés"
+        rights: "© 2026 - Tous droits réservés"
       }
     }
   }
